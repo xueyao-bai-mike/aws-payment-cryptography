@@ -4,6 +4,8 @@ This guide demonstrates how to successfully generate and verify Visa Dynamic Car
 
 It addresses a critical configuration detail regarding the **TR-31 Key Usage** required for EMV dynamic validation, which is often a stumbling block for developers.
 
+The following example assumes a stateful mechanism for tracking valid ATC values.  You can consider decisions such as whether to only allow previous value or a range of previous values and/or whether each value can only be used exactly once.  There are other approaches that are not stateful and instead rely on current time such as Visa time-based dcvv2 which is not shown here.
+
 ## 📋 Prerequisites
 
 * **AWS CLI** installed and configured.
